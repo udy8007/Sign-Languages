@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Site Metas -->
+    <title>Hayes Interpreting Services</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="assets/images/HandExt.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="assets/css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Slider out -->
+    <link rel="stylesheet" href="assets/css/jquery.tabSlideOut.css">
+    <link rel="stylesheet" href="assets/css/demo.css">
+    <script src="assets/js/2be9406092.js"></script>
+    <script src="assets/js/1.11.3/jquery.min.js"></script>
+    <script src="assets/js/jquery.tabSlideOut.js"></script>
+    <script src="assets/js/demo.js"></script>
+    <script>
+        var jQueryTemp = jQuery.noConflict(true);
+        var jQueryOriginal = jQuery || jQueryTemp;
+        if (window.jQuery) {
+            console.log('Original jQuery: ', jQuery.fn.jquery);
+            console.log('Second jQuery: ', jQueryTemp.fn.jquery);
+        }
+        window.jQuery = window.$ = jQueryTemp;
+
+        // $('body').scrollspy({
+        //     target: '#mainNav',
+        //     offset: 56
+        // });
+
+        function newwin(aid) {
+            var toggle = $('.navbar-toggler').is(':visible');
+            if (toggle) {
+                $('.navbar-collapse').collapse('hide');
+            }
+
+            var x = screen.width;
+            if (x > 700) {
+                if (aid == "Sec1") {
+                    window.scrollTo(0, 0);
+                }
+                if (aid == "Sec2") {
+                    window.scrollTo(0, 1256);
+                }
+                if (aid == "Sec3") {
+                    window.scrollTo(0, 1826);
+                }
+                if (aid == "Sec4") {
+                    window.scrollTo(0, 3526);
+                }
+                if (aid == "Sec5") {
+                    window.scrollTo(0, 4700);
+                }
+                if (aid == "Sec6") {
+                    window.scrollTo(0, 5578);
+                }
+                if (aid == "Sec4-Close") {
+                    window.scrollTo(0, 3526);
+                    $("#right-handle").click()
+                }
+            } else {
+                if (aid == "Sec1") {
+                    window.scrollTo(0, 0);
+                }
+                if (aid == "Sec2") {
+                    window.scrollTo(0, 1460);
+                }
+                if (aid == "Sec3") {
+                    window.scrollTo(0, 2100);
+                }
+                if (aid == "Sec4") {
+                    window.scrollTo(0, 5283);
+                }
+                if (aid == "Sec5") {
+                    window.scrollTo(0, 7010);
+                }
+                if (aid == "Sec6") {
+                    window.scrollTo(0, 9050);
+                }
+                if (aid == "Sec4-Close") {
+                    window.scrollTo(0, 3526);
+                    $("#right-handle").click()
+                }
+            }
+
+        }
+        $(document).ready(function() {
+
+            $("#home").on({
+                mouseenter: function() {
+                    $('.active').removeClass('active');
+                    $('#nav1').addClass('active');
+                }
+            });
+            $("#servicesnav").on({
+                mouseenter: function() {
+                    $('.active').removeClass('active');
+                    $('#nav2').addClass('active');
+                }
+            });
+            $("#about").on({
+                mouseenter: function() {
+                    $('.active').removeClass('active');
+                    $('#nav3').addClass('active');
+                }
+            });
+            $("#contact").on({
+                mouseenter: function() {
+                    $('.active').removeClass('active');
+                    $('#nav4').addClass('active');
+                }
+            });
+            $("#appointment").on({
+                mouseenter: function() {
+                    $('.active').removeClass('active');
+                    $('#nav5').addClass('active');
+                }
+            });
+            $("#gallery").on({
+                mouseenter: function() {
+                    $('.active').removeClass('active');
+                    $('#nav6').addClass('active');
+                }
+            });
+
+        });
+
+        $(document).ready(function() {
+            $('#nav1,#nav2,#nav3,#nav4,#nav5').click(function(event) {
+                $('.active').removeClass('active');
+                $(this).addClass('active');
+                event.preventDefault();
+            });
+        });
+    </script>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+    <app-root></app-root>
+    <!-- ALL JS FILES -->
+    <!-- <script src="assets/js/jquery.min.js"></script> -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.pogo-slider.min.js"></script>
+    <script src="assets/js/slider-index.js"></script>
+    <!-- Custom JavaScript for this theme -->
+    <!-- <script src="assets/js/smoothscroll.js"></script> -->
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/images-loded.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
