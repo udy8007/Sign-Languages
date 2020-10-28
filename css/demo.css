@@ -1,0 +1,35 @@
+body {
+    font-family: Open Sans, Helvetica, sans-serif;
+}
+
+#left {
+    border-color: red;
+}
+
+#left .handle {
+    background-color: red;
+}
+
+#right {
+    border-color: #4ba36a;
+    border-width: 2px;
+    width: 20em;
+    bottom: 2% !important;
+}
+
+#right .handle {
+    background-color: #78ce98;
+    color: white;
+}
+
+#bottom {
+    border-color: #4ba36a;
+}
+
+#bottom .handle {
+    background-color: #78ce98;
+}
+
+pre {
+    margin-left: 3em;
+}
